@@ -1,0 +1,29 @@
+PROGRAM AverageWeight
+
+    SET cumulativeWeight <- 0
+    SET count <- 0
+    SET more <- y	
+
+	SET weightWeight <- 0
+	
+	SET totalCount <- 0
+	WHILE more is equal to 'y'
+		
+        
+
+        PRINT "Item Number " + (INCREMENT count) + " :"
+
+        weightWeight <-- INPUT "Enter kg weight (greater than zero): "
+
+		WHILE weightWeight is less then or equal 0									
+			PRINT "Please enter in a value greater than zero"
+		ENDWHILE
+
+        SET cumulativeWeight to (cumulativeWeight + weight)
+
+        more <- INPUT "More? (y/n)"
+		
+	ENDWHILE
+
+    PRINT "Average weight of " + count + " items is: " + (cumulativeWeight /count) + " KG"
+END

@@ -1,0 +1,13 @@
+Whenever you mail a letter, you must decide how much postage to put on the envelope. You like to use this rule of thumb – use a stamp for every five sheets of paper or fraction thereof. For example, if you have 11 sheets of paper, then you use three stamps. Since you’re parsimonious, if an envelope requires more than three stamps, then you simply don’t mail the envelope. Show how the number of stamps per envelope would be calculated. Provide a solution in the form of pseudocode. Your pseudocode must read in appropriate data and print how many stamps to use.
+
+PROGRAM stamps
+
+stamps <- INPUT "This is how many stamps you will need"
+
+pages <- INPUT "How many pages is the letter?"
+
+WHILE pages < 15
+
+IF 
+
+ENDWHILE

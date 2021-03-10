@@ -1,0 +1,38 @@
+PROGRAM BankBalance
+
+    SET year <- 0
+    SET balance <- INPUT "How much would you like to input into your account?"  
+
+    
+    
+    PRINT "Is customer alive? (y/n)"
+    SET alive <- y
+
+        WHILE balance is less than OR equal 100,000 AND alive is y
+
+            years <- years ++                                                       
+            balance <- balance * 2                                                  
+
+        ENDWHILE
+
+        If alive is n
+            PRINT "THe full bank balance will go to the Bank."
+        ELSE
+            PRINT "It takes " + years + " years to reach $100,000."
+        ENDIF
+        
+
+        WHILE Balance is less then OR equal to 1,000,000 AND alive is y
+
+            years <- years ++                                                           
+            balance <- balance * 2                                                      
+
+        ENDWHILE
+
+        If alive is n
+            PRINT "THe full bank balance will go to the Bank."
+        ELSE
+            PRINT "It takes " + years + " years to reach $1,000,000."
+        ENDIF
+
+END

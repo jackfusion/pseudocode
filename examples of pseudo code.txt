@@ -1,0 +1,88 @@
+PROGRAM Guess the number ver.1
+
+    SET number TO RAND from 1 to 10
+    userAnswer <- INPUT: "Enter a number"
+
+    IF userAnswer is equal to number
+        PRINT "You won"
+    ELSE
+        PRINT "You lose
+    ENDIF
+
+END
+
+PROGRAM Guess the number ver.2
+
+    SET number TO RAND from 1 to 10
+    userAnswer <- INPUT: "Enter a number from 1 to 10"
+
+    WHILE userAnswer is not equal to number
+        userAnswer <- INPUT: "Enter a number from 1 to 10"
+    ENDWHILE
+
+    PRINT "You won"
+END
+
+PROGRAM Guess the number ver.3
+
+    SET number TO RAND from 1 to 10
+    userAnswer <- INPUT: "Enter a number from 1 to 10"
+
+    WHILE userAnswer is not equal to number
+        
+        IF userAnswer is more than number
+            PRINT "try less numbers"
+        ELSE IF userAnswer is less than number
+            PRINT "try more numbers"
+        ENDIF
+
+        userAnswer <- INPUT: "Enter a number from 1 to 10"
+    ENDWHILE
+
+    PRINT "You won"
+END
+
+PROGRAM Guess the number ver.4
+
+    SET number TO RAND from 1 to 10
+    SET userAnswer TO -1
+
+    WHILE userAnswer is not equal to number
+
+        userAnswer <- INPUT: "Enter a number from 1 to 10"
+        
+        IF userAnswer is more than number
+            PRINT "try less numbers"
+        ELSE IF userAnswer is less than number
+            PRINT "try more numbers"
+        ENDIF
+
+
+    ENDWHILE
+
+    PRINT "You won"
+END
+
+PROGRAM Guess the number ver.5
+
+    SET number TO RAND from 1 to 10
+    SET userAnswer TO -1
+
+    REPAT
+
+        userAnswer <- INPUT: "Enter a number from 1 to 10"
+        
+        IF userAnswer is more than number
+            PRINT "try less numbers"
+        ELSE IF userAnswer is less than number
+            PRINT "try more numbers"
+        ENDIF
+
+    UNTIL userAnswer equal to number 
+
+    ENDWHILE
+
+    PRINT "You won"
+END
+
+
